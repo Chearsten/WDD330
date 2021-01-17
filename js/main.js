@@ -1,6 +1,6 @@
 const links = [
     {label: "Week 01", url: "week1/index.html"},
-    {label: "Week 02", url: "week2/week2.html"},
+    {label: "Week 02", url: "week2/index.html"},
     {label: "Week 03", url: "week3/week3.html"},   
     {label: "Week 04", url: "week4/week4.html"},
     {label: "Week 05", url: "week5/week05.html"},
