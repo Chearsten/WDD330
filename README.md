@@ -1,2 +1,2 @@
 # WDD330
-Frontend2
+Frontend II Javascript
