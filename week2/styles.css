@@ -26,6 +26,11 @@ h1{
     font-size: 48px;
     margin: 0;
 }
+
+h3 li{
+    color: #ffffff;
+}
+
 button {
     color: #ffffff;
     background-color: #611BBD;
