@@ -27,7 +27,11 @@ h1{
     margin: 0;
 }
 
-h2 ul{
+h2 {
+    color: #ffffff;
+}
+
+ul {
     color: #ffffff;
 }
 
