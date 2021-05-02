@@ -1,3 +1,7 @@
+/* This is a note in JavaScript. This file is externally connected to the HTML*/
+
+//list for class weeks to automatically update - hopefully
+
 const links = [
     {label: "Week 01", url: "week1/index.html"},
     {label: "Week 02", url: "week2/index.html"},
