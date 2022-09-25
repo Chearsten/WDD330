@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W02 Team Activity</title>
+    <style>
+        #addedUp, #subResults, #multiResults, #results {
+            color: red;
+        }
+    </style>
+    <script>
+        function getInput() {
+            let userInput = document.getElementById("userInput").value;
+
+            document.getElementById("showHere").innerHTML = userInput;
+
+        }
+
+        function addItUp() {
+            let x = parseInt(document.getElementById("number").value);
+            let num = x;
+            for (let i = 0; i < x; i++) {
+                num += i;
+            }
+            document.getElementById("addedUp").innerHTML = num;
+
+        }
+
+        function addMachine() {
+            let x = parseInt(document.getElementById("x").value);
+            let y = parseInt(document.getElementById("y").value);
+            let results = x + y;
+            document.getElementById("results").innerHTML = results;
+
+        }
+
+        function subMachine() {
+            let x = parseInt(document.getElementById("subX").value);
+            let y = parseInt(document.getElementById("subY").value);
+            let results = x - y;
+            document.getElementById("subResults").innerHTML = results;
+
+        }
+
+        function multiMachine() {
+            let x = parseInt(document.getElementById("multiX").value);
+            let y = parseInt(document.getElementById("multiY").value);
+            let results = x * y;
+            document.getElementById("multiResults").innerHTML = results;
+
+        }
+
+        function divideMachine() {
+            let x = parseFloat(document.getElementById("divX").value);
+            let y = parseFloat(document.getElementById("divY").value);
+            let results = (x / y).toFixed(2);
+
+            document.getElementById("divideResults").innerHTML = results + " rounded to 2 decimals";
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>W02 Team Activity</h1>
+    <hr>
+    <div>
+
+        <input type="text" id="userInput" placeholder="Input something"><br><br>
+        <button onclick="getInput()">Do It!</button>
+
+    </div><br>
+
+    <div id="showHere"></div><br>
+    <hr>
+
+
+    <div>
+        <p>Select a number and it will be added up from 1 to that number</p>
+        <input type="text" id="number" placeholder="Input number 1-15">
+        <button onclick="addItUp()">Add it up!</button><br><br>
+
+
+        <div id="addedUp">Results will show here</div>
+
+    </div>
+
+    <hr>
+    <br>
+    <div>
+        <p>Add 2 numbers</p>
+        <input type="text" id="x">+<input type="text" id="y"><button onclick="addMachine()">=</button>
+        <div id="results"></div>
+    </div>
+    <div>
+        <p>Subtract 2 numbers</p>
+        <input type="text" id="subX">-<input type="text" id="subY"><button onclick="subMachine()">=</button>
+        <div id="subResults"></div>
+    </div>
+    <div>
+        <p>Multiply 2 numbers</p>
+        <input type="text" id="multiX">*<input type="text" id="multiY"><button onclick="multiMachine()">=</button>
+        <div id="multiResults"></div>
+    </div>
+    <div>
+        <p>Divide 2 numbers</p>
+        <input type="text" id="divX">/<input type="text" id="divY"><button onclick="divideMachine()">=</button><br><br>
+        <div id="divideResults"></div>
+    </div>
+
+
+
+</body>
+
+</html>
