@@ -8,7 +8,7 @@ function loadStory(){
 function saveStory(){
     var storyName=document.getElementById("name_input").value 
     var storyHTML=document.getElementById("story_editor").value
-    localStorage.setitem(storyName,storyHTML)
+    localStorage.setItem(storyName,storyHTML)
 }
 function displayStory(){
     var storyHTML=document.getElementById("story_editor").value
