@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD330w1 Notes with Dates</title>
+    <link rel="stylesheet" href="../css/main1wk.css" />
+  </head>
+
+  <body onload="showAllNotes()">
+	<section id="note_entry_area">
+		<h1>Note It!</h1>
+		Title: <input id="description_input"></input>
+		<textarea id="note_editor" placeholder="Write notes. Don't forget."></textarea>
+		<br>
+		<button onclick="saveNote()">Save</button>
+    <!-- <button onclick="showAllNotes()">Show Notes</button> -->
+	</section>
+	<section id="all_notes_display"></section>
+
+  </body>
+  <script src="../js/week1.js"></script>
+</html>
