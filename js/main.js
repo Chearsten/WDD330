@@ -32,8 +32,10 @@ for (let i = 0; i < links.length; i++) {
     
 }
 document.querySelector('div.olist').appendChild(list);
-=======
-/* This is a note in JavaScript. This file is externally connected to the HTML*/
+
+
+
+/* This is a note in JavaScript. This file is externally connected to the HTML
 
 //list for class weeks to automatically update - hopefully
 
@@ -50,4 +52,4 @@ const links = [
     {label: "Week 10", url: "week10/index.html"},
     {label: "Week 11", url: "week11/index.html"},
     {label: "Week 12", url: "week12/index.html"},
-]
+]*/
