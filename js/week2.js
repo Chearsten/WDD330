@@ -13,7 +13,7 @@ btn.addEventListener('click', change);
 
 
 /* EXAMPLE 2 
-Main Quiz JS and CSS files*/
+Main Quiz JS and CSS QuizStyles file*/
 
 
 
