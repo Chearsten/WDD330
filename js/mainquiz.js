@@ -12,6 +12,7 @@ const quiz = [
     ["What is Batman's real name?","Bruce Wayne"]
 ];
 
+//new functions to replace previous code
 function start(quiz){
     let score = 0;
 
