@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W06 Team Activity</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+<body>
+    <h1>To Do</h1>
+    <section class="task-list" onload="populate()">
+
+    </section>
+    
+
+
+    <span>
+        <p id="remaining"></p>
+        <button type="button" onclick="showAll()">All</button>
+        <button type="button" onclick="showActive()">Active</button>
+        <button type="button" onclick="showCompleted()">Completed</button>
+    </span>
+    <form>
+        <input type="text" id="inputbox" name="inputbox">
+        <button type="button" onclick="getTask()">+</button>
+    </form>
+    <script src="../js/week06.js"></script>
+
+</body>
+</html>
