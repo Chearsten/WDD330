@@ -17,27 +17,28 @@ function populate(x) {
         console.log(x.id);
         console.log(toDoList);
 
-         //create a button and set its attributes
+        
+        //create p to store text
+        let tasktext = document.createElement('p');
+
+        //create a button and set its attributes
         let butt = document.createElement('input');
         butt.setAttribute("class", "checker");
         butt.setAttribute("type", "checkbox");
         butt.setAttribute("onclick", "strikethrough(" + x.id + ")");
         
-        //create p to store text
-        let tasktext = document.createElement('p');
 
-       
-        
         //create delete button
         let delbutt = document.createElement('button');
         delbutt.setAttribute("class", "trash");
         delbutt.setAttribute("onclick", "trashTask(" + x.id + ")");
-        delbutt.textContent = "delete";
+        delbutt.textContent = "Delete";
 
         //set text of item on screen
         tasktext.innerHTML = x.content;
         //append items to div
-        task.appendChild(tasktext)
+        
+        task.appendChild(tasktext);
         task.appendChild(butt);
         task.appendChild(delbutt);
         
