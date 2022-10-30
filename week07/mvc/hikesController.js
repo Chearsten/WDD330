@@ -32,6 +32,7 @@ export default class HikesController {
     ).ontouchend = () => {
       this.showHikeList();
     };
+    this.addBackListener();
     // show the comments for just this hike
     this.comments.showCommentList(hikeName);
   }
@@ -40,9 +41,17 @@ export default class HikesController {
     // We need to loop through the children of our list and attach a listener to each, remember though that children is a nodeList...not an array. So in order to use something like a forEach we need to convert it to an array.
     const childrenArray = Array.from(this.parentElement.children);
     childrenArray.forEach(child => {
-      child.addEventListener('touchend', e => {
+      child.addEventListener('click', e => {
         this.showOneHike(e.currentTarget.dataset.name);
       });
     });
   }
+
+addBackListener() {
+  let backButton = document.getElementById('backBtn');
+  backButton.addEventListener('click', e => {
+    this.showHikeList();
+  });
+}
+
 }
