@@ -4,7 +4,7 @@ alert('Welcome to Quiz Superhero!');
 
 const question = "Are you Super?"
 const answer = prompt(question);
-alert(`You answered ${answer} + You are Super Amazing!`);
+alert(`You answered ${answer}, You are Super Amazing!`);
 
 
 
